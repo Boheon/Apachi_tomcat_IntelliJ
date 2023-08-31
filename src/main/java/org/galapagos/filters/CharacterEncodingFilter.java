@@ -2,10 +2,11 @@ package org.galapagos.filters;
 
 import javax.servlet.*;
 import javax.servlet.annotation.WebFilter;
+import javax.servlet.http.HttpFilter;
 import java.io.IOException;
 
 @WebFilter("/test")
-public class CharacterEncodingFilter implements Filter {
+public class CharacterEncodingFilter extends HttpFilter implements Filter {
 
     public CharacterEncodingFilter() {
         super();
